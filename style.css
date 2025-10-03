@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a23;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Logo Styling - Inspired by Milky Way chocolate, curly and fun */
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #8b4513;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 51, 0.7);
+    padding: 0.40px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+}
+
+.header-logo {
+    height: 70px; 
+    width: 45%; 
+    max-width: 300px;  
+    object-fit: contain; 
+    margin-left: auto; 
+}
+
+/* Login Page */
+#login-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('bg.jpg') repeat;;
+    animation: stars-twinkle 4s infinite;
+}
+
+@keyframes stars-twinkle {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 0; }
+}
+
+#login-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    color: #0a0a23;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.4s;
+}
+
+button:hover {
+    background: #ffd700;
+}
+
+/* Content Sections */
+#content-section {
+    display: none;
+    padding: 50px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255,255,255,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ffcc00;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 51, 0.9);
+    padding: 20px 45px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffcc00;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f24f09;
+}
+
+/* Background stars */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.jpg') repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
